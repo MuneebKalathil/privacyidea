@@ -1,12 +1,14 @@
-Build environment for building CentOS packages
+Build environment for building RHEL Distribution packages
 
-Works for CentOS7 and CentOS8.
+Works for CentOS8 and CentOS9.
+Tested in Oracle Linux 8, 9
+
 
 Make will fetch the version from GitHub.
 
 E.g. You can build a devel repo like this:
 
-    VERSION=2.23 make clean buildrpm fill-devel-repo make-repo
+    VERSION=3.8.1 make clean buildrpm 
 
 If you want to build privacyidea-selinux you need to adapt the privacyidea-selinux.spec file and run:
 
